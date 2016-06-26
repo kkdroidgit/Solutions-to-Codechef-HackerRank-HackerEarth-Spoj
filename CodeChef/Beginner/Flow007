@@ -9,15 +9,19 @@ class flow007
       {
           while( t-- >=1)
           {
-      	long n=sc.nextLong();String s="";long r;
+      	long n=sc.nextLong();
+      	if(n>=1 && n<=100000)
+      	{
+      	long s=0;long r;
       	while(n>0)
       	{	
       		r=n%10;
-      		s=s+r;
+      		s=(s*10)+r;
       		n=n/10;
       	}	
       	System.out.println(s);
 
+       }
        }	
     }
    
