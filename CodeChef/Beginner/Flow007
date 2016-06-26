@@ -1,0 +1,27 @@
+import java.util.*;
+class flow007
+{
+   public static void main(String args[])
+   {
+      Scanner sc=new Scanner(System.in);
+      int t=sc.nextInt();
+      if(t >=1 && t<=1000)
+      {
+          while( t-- >=1)
+          {
+      	long n=sc.nextLong();String s="";long r;
+      	while(n>0)
+      	{	
+      		r=n%10;
+      		s=s+r;
+      		n=n/10;
+      	}	
+      	System.out.println(s);
+
+       }	
+    }
+   
+   }
+   
+
+}
