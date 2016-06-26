@@ -1,0 +1,37 @@
+
+import java.util.*;
+class flow004
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        if(t>=1 && t<=1000)
+        {
+            while(t-- >=1)
+            {
+                String s=sc.next();
+                int l=s.length();
+                long l1=Long.parseLong(s);
+                if(l1>1 && l1<=1000000)
+                {
+                char a=s.charAt(0);
+                char b=s.charAt(l-1);
+                int c=Character.getNumericValue(a)+Character.getNumericValue(b);
+                System.out.println(c);
+                 }
+                 else if(l1==1)
+                 {
+                     System.out.println(l1);
+                  }
+                 else
+                 {
+                 }
+            }
+
+
+        }
+
+    }
+
+}
