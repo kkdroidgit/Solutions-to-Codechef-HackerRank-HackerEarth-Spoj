@@ -1,0 +1,40 @@
+import java.util.*;
+class atm
+{
+   public static void main(String args[])
+   {
+      Scanner sc=new Scanner(System.in);
+      double x=sc.nextDouble();double bal=0;
+      double y=sc.nextDouble();bal=y;
+      if((x>=0 && x<=2000)&& (y>=0 && y<=2000))
+      {
+      	double c=x%5;
+      	if(x<=y)
+      	{	
+      		if(c==0)
+      		{
+      			bal=y-x-0.50;
+      			
+      		}
+      		else
+      		{
+      			bal=y;
+      		}
+
+      	}
+      	else
+      	{
+      		bal=y;
+      	}
+      	String str = String.format("%.2f", bal);
+      	System.out.println(str);
+
+      }
+
+
+      
+
+
+
+  }
+}
