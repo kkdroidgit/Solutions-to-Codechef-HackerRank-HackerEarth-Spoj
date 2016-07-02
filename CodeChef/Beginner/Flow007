@@ -9,10 +9,8 @@ class flow007
       {
           while( t-- >=1)
           {
-      	long n=sc.nextLong();
-      	if(n>=1 && n<=100000)
-      	{
-      	long s=0;long r;
+      	int n=sc.nextInt();
+      	int s=0;int r;
       	while(n>0)
       	{	
       		r=n%10;
@@ -20,12 +18,12 @@ class flow007
       		n=n/10;
       	}	
       	System.out.println(s);
-
+ 
        }
-       }	
+       	
     }
    
    }
    
-
-}
+ 
+} 
