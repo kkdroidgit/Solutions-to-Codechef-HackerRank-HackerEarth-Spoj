@@ -1,0 +1,85 @@
+import java.util.*;
+import java.lang.*;
+
+class Main
+{
+    public static int countk(char a,String k)
+    {
+        int l=k.length();int c=0;
+        for(int i=0;i<l;i++)
+        {
+            char t=k.charAt(i);
+            if(t==a)
+            {
+                c++;
+            }
+        }
+        return c;
+    }
+    public static int countm(char b,String m)
+    {
+         int l=m.length();int c1=0;
+        for(int i=0;i<l;i++)
+        {
+            char t=m.charAt(i);
+            if(t==b)
+            {
+                c1++;
+            }
+        }
+        return c1;
+    }  
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	  Scanner sc=new Scanner(System.in);
+	  int t=sc.nextInt();
+	  while(t-- >=1)
+	  {
+	  	String s=sc.next();
+	  	int l=s.length();String k="";String m="";
+	  	if(l%2==0)
+	  	{ 
+	  	    k=s.substring(0,l/2);
+	  	    m=s.substring(l/2,l);
+       }
+       else{
+           k=s.substring(0,l/2);
+           m=s.substring(((l/2)+1),l);
+           
+           
+        }int c=0;
+        for(int i=0;i<l/2;i++)
+        {
+            char z=k.charAt(i);
+            int tk=countk(z,k);
+            int tm=countm(z,m);
+            if(tk==tm)
+            {
+                c=1;
+                continue;
+                
+            }
+            else
+            {
+                c=-1;
+                break;
+            }
+            
+        }
+        if(c==1)
+        {
+            System.out.println("YES");
+        }
+        else
+        {
+            System.out.println("NO");
+        }
+        
+                
+            
+    }
+}
+}
+
+
+	  	
