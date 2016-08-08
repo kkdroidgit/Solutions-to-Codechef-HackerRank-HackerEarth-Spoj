@@ -1,0 +1,22 @@
+import java.util.*;
+import java.lang.*;
+class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	  Scanner sc=new Scanner(System.in);
+	  int t=sc.nextInt();
+	  while(t-- >=1)
+	  {
+	  	double p=sc.nextDouble();
+	  	double s=sc.nextDouble();
+	  	double b=(p-(Math.sqrt(p*p-24*s)))/12;
+		double v=(b*s)/2-(b*b*p)/4+(b*b*b);
+	  	String f=Double.toString(v);
+	  	f=String.format("%.2f",v);
+	  	System.out.println(f);
+     }
+    }
+}
+
+	  	
