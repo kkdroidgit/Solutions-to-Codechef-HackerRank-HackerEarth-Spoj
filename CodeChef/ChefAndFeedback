@@ -1,0 +1,44 @@
+import java.io.*;
+import java.util.*;
+class Solution
+{ 
+   public static void main(String args[])
+   {
+      Scanner sc=new Scanner(System.in);
+      int t1=sc.nextInt();
+      while(t1-- >=1)
+      { 
+          String s=sc.next();
+          int n=s.length();
+          String t="101";int c=0;
+          String r="010";int i=3;int j=0;int p=0;
+          while(i<=n)
+          {
+              p=1;
+            String su=s.substring(j,i);
+           
+            if((su.equals(r))||(su.equals(t)))
+            {
+            System.out.println("Good");c=1;
+          break;
+             }
+        else
+        { 
+           j++;
+           i+=1;
+           c=-1;
+           }
+           
+        }
+    if(c==-1)
+    {
+        System.out.println("Bad");
+    }
+    if(p==0)
+    {
+        System.out.println("Bad");
+        
+    }
+}
+}
+}
