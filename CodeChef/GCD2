@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.math.*;
+ class gcd2
+{
+   public static BigInteger gcd(BigInteger a,BigInteger b)
+   {
+      BigInteger c=a.gcd(b);
+      return c;
+    }
+    
+    public static void main(String args[])
+    {
+          Scanner sc=new Scanner(System.in);
+          int t=sc.nextInt();
+          while(t-- >=1)
+          {  
+              BigInteger a=sc.nextBigInteger();
+              BigInteger b=sc.nextBigInteger();
+              BigInteger c=gcd(a,b);
+              System.out.println(c);
+            }
+        }
+    }
+    
