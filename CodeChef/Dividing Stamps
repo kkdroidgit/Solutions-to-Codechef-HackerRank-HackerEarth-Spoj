@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+public class a
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();long sum=0;long sum1=0;long n=0;
+        for(long i=1;i<=t;i++)
+        {
+            n=sc.nextLong();
+            sum1=sum1+n;
+            sum=sum+i;
+        }
+        if(sum1==sum)
+        {
+             System.out.println("YES");
+            }
+            else
+            {
+                System.out.println("NO");
+            }
+        }
+    }
+            
