@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+import java.math.*;
+class coinflip
+{
+   
+    
+    public static void main(String args[])
+    {
+         Scanner sc=new Scanner(System.in);
+         int t=sc.nextInt();
+         while(t-- >=1)
+         {
+              long g=sc.nextLong();
+              while(g-- >=1)
+              {
+                  long i=sc.nextInt();
+                  long n=sc.nextLong();
+                  long q=sc.nextLong();
+                  if((n%2==0)||(i==q))
+                  {
+                      
+                  System.out.println(n/2);
+                }
+                else
+                {
+                    System.out.println((n/2)+1);
+                }
+                }
+            }
+        }
+    }
+                  
+                  
