@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+class ttneis
+{
+  public static void main(String args[])
+  {
+      Scanner sc=new Scanner(System.in);
+      int t=sc.nextInt();
+      while(t-- >=1)
+      {
+          String s=sc.next();
+          int l=s.length()-1;int c1=0;
+          int c0=0;
+          
+          for(int i=0;i<l;i++)
+          {
+              if((s.charAt(i)=='0'))
+              {
+                   c0++;
+                }
+                else
+                {
+                    c1++;
+                }
+            }
+    
+            if(c1>c0)
+            {
+                 System.out.println("WIN");
+                }
+                else
+                {
+                    System.out.println("LOSE");
+                }
+            }
+        }
+    }
+            
+                    
+      
+   
