@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.*;
+class flow008
+{
+   public static void main(String args[])
+   {
+     Scanner sc=new Scanner(System.in);
+     int t=sc.nextInt();
+     while(t-- >=1)
+     {
+       System.out.println(sc.nextInt()<10?"What an obedient servant you are!":"-1");
+     }
+   }
+}
