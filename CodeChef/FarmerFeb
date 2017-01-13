@@ -1,0 +1,38 @@
+import java.io.*;
+import java.util.*;
+class Potatoes
+{
+  public static boolean prime(int n)
+  { 
+      int c=0;
+      for(int i=1;i<=n;i++)
+      {
+           if(n%i==0)
+           {c++;
+            }
+      }
+      if(c==2)
+      return true;
+      else
+      return false;
+    }
+      
+  public static void main(String args[])
+  {
+       Scanner sc=new Scanner(System.in);
+       int t=sc.nextInt();
+       while(t-- >=1)
+       {
+            int x=sc.nextInt();
+            int y=sc.nextInt();
+            int to=x+y;int z=0;
+            while(z!=1)
+            {
+                to++;
+                if(prime(to)){z=1;System.out.println(to-(x+y));break;
+                }
+                
+        }
+   } 
+}
+}
