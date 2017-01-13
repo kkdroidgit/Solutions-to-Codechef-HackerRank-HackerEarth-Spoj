@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+class ojumps
+{
+   public static void main(String args[])
+   {
+      Scanner sc=new Scanner(System.in);
+      Long a=sc.nextLong();
+
+      if((a==0)||((a%6)==1)||(a%3==0))
+      {
+          System.out.print("yes");
+      }
+      else
+      {
+          
+          System.out.print("no");
+      
+     
+   }
+}
+}
